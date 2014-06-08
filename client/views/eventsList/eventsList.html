@@ -1,0 +1,25 @@
+<template name="eventsList">
+
+  <div class="row">
+  {{#each event}}
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <a href="{{link}}">
+      <img data-src="holder.js/300x200" alt="..."></a>
+      <div class="caption">
+        <a href="/event/{{_id}}"><h3>{{name}}</h3></a>
+
+        <p>{{dotdotdot description 140}}</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{percent min registered}}%">
+            <span class="sr-only">{{percent min registered}}% Complete</span>
+          </div>
+        </div>
+
+        <p><a href="#" class="btn btn-primary" role="button">Register</a> <a href="#" class="btn btn-default" role="button">More Info</a></p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+</template>

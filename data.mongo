@@ -1,0 +1,23 @@
+Events.insert({
+                name:"Echelon 2014",
+                date: new Date('Jun 23, 2014'),
+                country: 'Singapore',
+                cost: 300.40,
+                link: "http://www.eventbrite.sg/e/echelon-2014-the-pulse-of-asias-innovation-tickets-10523663561?aff=ehometext&rank=0"
+});
+
+Events.insert({
+                name:"Techcrunch Disrupt",
+                date: new Date('Jul 13, 2014'),
+                country: 'United States',
+                cost: 600.40,
+                link: "http://www.eventbrite.sg/e/echelon-2014-the-pulse-of-asias-innovation-tickets-10523663561?aff=ehometext&rank=0"
+});
+
+Events.insert({
+                name:"Startup Asia",
+                date: new Date('Sep 13, 2014'),
+                country: 'Singapore',
+                cost: 700.40,
+                link: "http://www.eventbrite.sg/e/echelon-2014-the-pulse-of-asias-innovation-tickets-10523663561?aff=ehometext&rank=0"
+});
