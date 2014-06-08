@@ -9,7 +9,9 @@
       "profile": {},
       "houston": {},
       "holder": {},
-      "moment": {}
+      "moment": {},
+      "nprogress": {},
+      "animate-css": {}
     },
     "packages": {
       "iron-router": {
@@ -51,6 +53,16 @@
         "git": "https://github.com/acreeger/meteor-moment.git",
         "tag": "v2.6.0",
         "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
+      },
+      "nprogress": {
+        "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
+        "tag": "v0.0.4",
+        "commit": "8333206b751a24fac1fbd1b03fa37621bcefe50c"
+      },
+      "animate-css": {
+        "git": "https://github.com/nate-strauser/meteor-animate-css.git",
+        "tag": "v3.1.1",
+        "commit": "59ce70b99dff5bc3d1227b789eefa43a761db158"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

@@ -4,7 +4,7 @@
   {{#each event}}
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <a href="{{link}}">
+      <a href="/event/{{_id}}#top">
       <img data-src="holder.js/300x200" alt="..."></a>
       <div class="caption">
         <a href="/event/{{_id}}"><h3>{{name}}</h3></a>
@@ -16,7 +16,10 @@
           </div>
         </div>
 
-        <p><a href="#" class="btn btn-primary" role="button">Register</a> <a href="#" class="btn btn-default" role="button">More Info</a></p>
+        <p>
+        <a href="/event/{{_id}}/register" class="btn btn-primary" role="button">Register</a>
+        <a href="/event/{{_id}}" class="btn btn-default" role="button">More Info</a>
+        </p>
       </div>
     </div>
   </div>

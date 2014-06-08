@@ -1,6 +1,5 @@
 Template.event.rendered = function ( ) { Holder.run(); };
 
-
 function registerStartup() {
     form={};
 
