@@ -1,7 +1,10 @@
 <template name="index">
-{{>jumbotron}}
+  {{#unless currentUser}}
+    {{>jumbotron}}
+    <hr>
+  {{/unless}}
 
-<hr>
+
 
 <div class="row-fluid marketing">
   <div class="span8">

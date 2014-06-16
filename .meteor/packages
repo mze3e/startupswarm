@@ -10,9 +10,10 @@ iron-router
 bootstrap-3
 accounts-entry
 font-awesome
-profile
 houston
 holder
 moment
 nprogress
 animate-css
+gravatar
+coffeescript

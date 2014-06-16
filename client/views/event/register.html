@@ -1,0 +1,68 @@
+<template name="register">
+
+    <div class="row clearfix">
+      <div class="col-md-6 column">
+<hr>
+          {{#if currentUser}}
+          <button type="submit" class="btn btn-default" id="registerCompany">Register {{company}} for {{name}}</button>
+          <button type="submit" class="btn btn-warning" id="cancelRegistration">Cancel Registration</button>
+          {{/if}}
+          {{#unless currentUser}}
+          <button type="submit" class="btn btn-error" id="login">Register {{company}} for {{name}}</button>
+          {{/unless}}
+
+      </div>
+    </div>
+</template>
+
+
+<template name="registerFullPage">
+<a href="/event/{{_id}}">&lt;{{name}} Event Page</a>
+{{>register}}
+</template>
+
+
+
+<template name="registerForm">
+  <h3>Contact Information</h3>
+  <hr/>
+<form id="registerStartupForm" role="form">
+  <div class="form-group">
+     <label for="contactName">Contact Name</label>
+     <input type="text" class="form-control" id="contactName" />
+  </div>
+
+  <div class="form-group">
+     <label for="contactEmail">Contact Email</label>
+     <input type="email" class="form-control" id="contactEmail" />
+  </div>
+
+  <div class="form-group">
+     <label for="mobileNumber">Mobile Number</label>
+     <input type="phone" class="form-control" id="mobileNumber" />
+  </div>
+
+  <div class="form-group">
+     <label for="position">Position</label>
+     <input type="text" class="form-control" id="position" />
+  </div>
+
+  <h3>Company Information</h3>
+
+
+  <div class="form-group">
+     <label for="companyName">Company Name</label>
+     <input type="text" class="form-control" id="companyName" />
+  </div>
+
+  <div class="form-group">
+     <label for="country">Country of Incorporation</label>
+     <input type="text" class="form-control" id="country" />
+  </div>
+
+  <div class="form-group">
+     <label for="registrationDate">Company Registration Date</label>
+     <input type="date" class="form-control" id="registrationDate" />
+  </div>
+</form>
+</template>

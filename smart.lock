@@ -6,12 +6,12 @@
       "bootstrap-3": {},
       "accounts-entry": {},
       "font-awesome": {},
-      "profile": {},
       "houston": {},
       "holder": {},
       "moment": {},
       "nprogress": {},
-      "animate-css": {}
+      "animate-css": {},
+      "gravatar": {}
     },
     "packages": {
       "iron-router": {
@@ -33,11 +33,6 @@
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
         "tag": "v4.1.0",
         "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
-      },
-      "profile": {
-        "git": "https://github.com/Differential/meteor-profile.git",
-        "tag": "v0.0.10",
-        "commit": "2540cdc76cf5c5fdf6ee0fd0cff1e37c4b1ba519"
       },
       "houston": {
         "git": "https://github.com/gterrono/houston.git",
@@ -64,6 +59,11 @@
         "tag": "v3.1.1",
         "commit": "59ce70b99dff5bc3d1227b789eefa43a761db158"
       },
+      "gravatar": {
+        "git": "https://github.com/tmeasday/meteor-gravatar.git",
+        "tag": "v0.0.4",
+        "commit": "d1052ff4401725c23fb199c0e0a36e29b926bc22"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -83,6 +83,16 @@
         "git": "https://github.com/SachaG/meteor-spin.git",
         "tag": "v0.2.2",
         "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
+      },
+      "crypto-md5": {
+        "git": "https://github.com/oortcloud/meteor-crypto-md5.git",
+        "tag": "v3.1.2.2",
+        "commit": "75bbb3eeace302122d3554a6212a6fe92553fa18"
+      },
+      "crypto-base": {
+        "git": "https://github.com/oortcloud/meteor-crypto-base.git",
+        "tag": "v3.1.2.1",
+        "commit": "5df8d82a0595553415bbfae2930c6ecbeece5794"
       }
     }
   }
