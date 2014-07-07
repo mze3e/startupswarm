@@ -22,20 +22,25 @@
     {{prettifyDate date}}
 
   </p>
-<hr />
-
-<h1>Startups Registered</h1>
-{{#each registeredStartups}}
-<div class="media">
-  <a class="pull-left" href="#">
-    <img class="media-object" src="/icon-tick.png" alt="...">
-  </a>
-  <div class="media-body">
-    <h4 class="media-heading">{{companyName}}</h4>
-    {{contactName}}
-  </div>
-</div>
-{{/each}}
-
+{{>registeredStartups}}
 {{>register}}
+</template>
+
+
+<template name="registeredStartups">
+  <hr />
+
+  <h1>Startups Registered</h1>
+  {{#each registeredStartups}}
+  <div class="media">
+    <a class="pull-left" href="#">
+      <img class="media-object" src="/icon-tick.png" alt="...">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">{{companyName}}</h4>
+      {{contactName}}
+    </div>
+  </div>
+  {{/each}}
+
 </template>

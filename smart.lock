@@ -21,8 +21,8 @@
       },
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v3.1.1-1",
-        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+        "tag": "v3.2.0-1",
+        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
       },
       "accounts-entry": {
         "git": "https://github.com/Differential/accounts-entry.git",
@@ -36,8 +36,8 @@
       },
       "houston": {
         "git": "https://github.com/gterrono/houston.git",
-        "tag": "v1.0.4",
-        "commit": "e76bda40587ac80ce51ee417047be8272664625c"
+        "tag": "v1.0.6",
+        "commit": "49765acf835385de6de6160b0c86514d5af09395"
       },
       "holder": {
         "git": "https://github.com/Dsyko/meteor-holder.git",
@@ -51,8 +51,8 @@
       },
       "nprogress": {
         "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
-        "tag": "v0.0.4",
-        "commit": "8333206b751a24fac1fbd1b03fa37621bcefe50c"
+        "tag": "v0.0.5",
+        "commit": "bb88a057166e0f1386ab8bc0a1e080b48aa59159"
       },
       "animate-css": {
         "git": "https://github.com/nate-strauser/meteor-animate-css.git",
