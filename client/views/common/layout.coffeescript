@@ -1,0 +1,13 @@
+Template.masterLayout.rendered = ->
+  setActiveLinks()
+
+setActiveLinks = _.debounce ->
+  alert "setActiveLinks Called"
+  path = location.pathname
+  $("a[href].active").removeClass('active')
+  $("a[href='#{path}']").addClass('active')
+  # deal with top level nav
+  stem = path.split('/')[1]
+  $('.navbar-nav > li.active').removeClass('active')
+  $(".navbar-nav a[href^='/#{stem}']").parent().addClass('active')
+,250, true

@@ -1,4 +1,46 @@
-Events = new Meteor.Collection("events");
+Events = new Meteor.Collection("events", {
+    schema: {
+        name: {
+            type: String,
+            label: "Event Name"
+        },
+        cost: {
+            type: Number,
+            label: "Ticket Cost",
+            min: 0
+        },
+        country: {
+            type: String,
+            label: "Country"
+        },
+        date: {
+            type: String,
+            label: "Event Date"
+        },
+        description: {
+            type: String,
+            label: "Event Description"
+        },
+        link: {
+            type: String,
+            label: "Event Registration Link"
+        },
+        min: {
+            type: Number,
+            label: "Minimum Startups",
+            min: 1
+        },
+        min: {
+            type: Number,
+            label: "Minimum Startups",
+            min: 1
+        },
+        registered: {
+            type: Number,
+            label: "Registered Startups",
+            min: 1
+        }
+    }});
 
 Events.allow({
   insert: function (userId, doc) {

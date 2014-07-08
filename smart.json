@@ -9,6 +9,7 @@
     "moment": {},
     "nprogress": {},
     "animate-css": {},
-    "gravatar": {}
+    "gravatar": {},
+    "autoform": {}
   }
 }

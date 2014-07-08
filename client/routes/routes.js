@@ -1,19 +1,20 @@
 Router.map(function() {
 
   this.route('index', {path: '/'});
-  this.route('event', {path: '/'});
-
+  this.route('contactForm'), {path: '/contact'}
   this.route('event', {
   path: '/event/:_id',
   data: function() { return Events.findOne(this.params._id); }
   });
 
-this.route('registerFullPage', {
-path: '/event/:_id/register',
-data: function() { return Events.findOne(this.params._id); }
-});
+  this.route('registerFullPage', {
+  path: '/event/:_id/register',
+  data: function() { return Events.findOne(this.params._id); }
+  });
 
   this.route('about', {path: '/about'});
+
+  this.route('addEvent', {path:'/addEvent'})
 });
 
 
