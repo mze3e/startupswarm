@@ -1,0 +1,14 @@
+<template name="suggestForm">
+  {{#autoForm schema=suggestFormSchema id="suggestForm" type="method" meteormethod="sendEmail"}}
+  <fieldset>
+    <legend>Suggest an Event to be added to StartupSwarm.com</legend>
+    {{> afQuickField name="name"}}
+    {{> afQuickField name="email"}}
+    {{> afQuickField name="message" rows=10}}
+    <div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-default">Reset</button>
+    </div>
+  </fieldset>
+  {{/autoForm}}
+</template>

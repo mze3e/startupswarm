@@ -1,16 +1,10 @@
 Meteor.startup(function () {
 
 
-
-
-
 });
 
 
   Meteor.publish("events", function (args) {
-
-    //console.log(args.searchString);
-    //console.log(args.limit);
       return Events.find();
   });
 
@@ -36,3 +30,26 @@ Meteor.methods({
     });
   }
 });
+
+
+
+
+Accounts.onCreateUser(function(options, user) {
+  if (options.profile)
+    user.profile = options.profile;
+
+  user.profile.contactName = "";
+  user.profile.company = "";
+  user.profile.location = "";
+  user.profile.elevatorPitch = "";
+  user.profile.url = "";
+  user.profile.googlePlusUrl = "";
+  user.profile.twitterHandle = "";
+
+  return user;
+});
+
+
+var cancelRegistration = function(userId, eventId) {
+    Registrations.remove({userId: userId, eventId: eventId});
+}

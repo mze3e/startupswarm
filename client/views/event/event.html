@@ -1,7 +1,7 @@
 <template name="event">
 
   <div class="page-header">
-  <h1>{{name}} <small><a id="top" class="button" href="{{link}}">Check Event Website</a></small></h1>
+  <h1>{{name}} <small><a id="top" target="_blank" class="button" href="{{link}}">Check Event Website</a></small></h1>
 </div>
 
   <div class="progress" style="height:1.75em;line-height:1.5em;font-size: 1.2em;">
@@ -15,8 +15,8 @@
     <h3>Event Description</h3>
     {{description}}
 
-    <h3>Country</h3>
-    {{country}}
+    <h3>Location</h3>
+    {{location}}
 
     <h3>Date</h3>
     {{prettifyDate date}}

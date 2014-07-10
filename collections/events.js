@@ -4,17 +4,21 @@ Events = new Meteor.Collection("events", {
             type: String,
             label: "Event Name"
         },
+        imageUrl: {
+            type: String,
+            label: "Event Image URL"
+        },
         cost: {
-            type: Number,
-            label: "Ticket Cost",
+            type: String,
+            label: "Ticket Cost (eg. USD 400)",
             min: 0
         },
-        country: {
+        location: {
             type: String,
-            label: "Country"
+            label: "Event Location"
         },
         date: {
-            type: String,
+            type: Date,
             label: "Event Date"
         },
         description: {
@@ -29,33 +33,22 @@ Events = new Meteor.Collection("events", {
             type: Number,
             label: "Minimum Startups",
             min: 1
-        },
-        min: {
-            type: Number,
-            label: "Minimum Startups",
-            min: 1
-        },
-        registered: {
-            type: Number,
-            label: "Registered Startups",
-            min: 1
         }
     }});
 
 Events.allow({
   insert: function (userId, doc) {
     // the user must be logged in, and the document must be owned by the user
-    return isAdmin(userId);
+    return Houston._user_is_admin(userId);
   },
   update: function (userId, doc, fields, modifier) {
     // can only change your own documents
-    return isAdmin(userId);
+    return true;
   },
   remove: function (userId, doc) {
     // can only remove your own documents
-    return isAdmin(userId);
-  },
-  fetch: ['owner']
+    return Houston._user_is_admin(userId);
+  }
 });
 
 Events.deny({

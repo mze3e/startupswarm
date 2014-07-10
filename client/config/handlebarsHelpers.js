@@ -1,5 +1,5 @@
 Handlebars.registerHelper('dotdotdot', function(str,chars) {
-  if (str.length > chars)
+  if (str && str.length > chars)
     return str.substring(0,chars) + '...';
   return str;
 });

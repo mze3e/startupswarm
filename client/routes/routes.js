@@ -15,6 +15,8 @@ Router.map(function() {
   this.route('about', {path: '/about'});
 
   this.route('addEvent', {path:'/addEvent'})
+
+  this.route('suggestForm', {path:'/suggestForm'})
 });
 
 
