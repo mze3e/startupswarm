@@ -1,3 +1,21 @@
 <template name="addEvent">
-  {{> quickForm collection="Events" id="insertEventForm" type="insert"}}
+  <p>Note: For images, go to <a href="http://imgur.com">imgur.com</a>, Upload the image and crop it to 300 x 200 size and then copy the .jpg link from html embed code in imgur website.</p>
+
+
+  {{#autoForm collection="Events" id="insertEventForm" type="insert"}}
+  <fieldset>
+    <legend>Add an Event</legend>
+    {{> afQuickField name='name'}}
+    {{> afQuickField name='date'}}
+    {{> afQuickField name='imageUrl'}}
+    {{> afQuickField name='description' rows=6}}
+    {{> afQuickField name='cost'}}
+    {{> afQuickField name='location'}}
+    {{> afQuickField name='link'}}
+    {{> afQuickField name='min'}}
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Add Event</button>
+  {{/autoForm}}
+
+
 </template>

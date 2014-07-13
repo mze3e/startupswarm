@@ -12,6 +12,11 @@ Router.map(function() {
   data: function() { return Events.findOne(this.params._id); }
   });
 
+  this.route('editEvent', {
+  path: '/event/:_id/edit',
+  onBeforeAction: function() { Session.set("selectedDocId",this.params._id) }
+  });
+
   this.route('about', {path: '/about'});
 
   this.route('addEvent', {path:'/addEvent'})

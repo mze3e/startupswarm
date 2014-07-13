@@ -9,16 +9,19 @@
       <div class="caption">
         <a href="/event/{{_id}}"><h3>{{name}}</h3></a>
 
-        <p>{{dotdotdot description 140}}</p>
+        <p>{{dotdotdot description 120}}</p>
         <div class="progress">
-          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{percent min registered}}%">
-            <span class="sr-only">{{percent min registered}}% Complete</span>
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{percent this}}%">
+            <span class="sr-only">{{percent this}}% Complete</span>
           </div>
         </div>
 
         <p>
-        <a href="/event/{{_id}}/register" class="btn btn-primary" role="button">Register</a>
+        <a href="/event/{{_id}}" class="btn btn-primary" role="button">Register</a>
         <a href="/event/{{_id}}" class="btn btn-default" role="button">More Info</a>
+        {{#if currentUserIsAdmin}}
+        <a href="/event/{{_id}}/edit" class="btn btn-default" role="button">Edit Event</a>
+        {{/if}}
         </p>
       </div>
     </div>

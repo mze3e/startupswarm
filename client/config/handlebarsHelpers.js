@@ -5,23 +5,32 @@ Handlebars.registerHelper('dotdotdot', function(str,chars) {
 });
 
 
-Handlebars.registerHelper('percent', function(min,count) {
+Handlebars.registerHelper('percent', function(event) {
+  min = event.min;
+  count = event.registeredStartups === undefined ? 0 : event.registeredStartups.length;
+
   if (min < count)
     return 100;
   return count/min*100;
 });
 
-Handlebars.registerHelper('moreNeeded', function(min,count) {
-  if (min < count)
-    return count + "Startups Going";
+Handlebars.registerHelper('moreNeeded', function(event) {
 
-  if (count>2)
-  return (min-count)!=1?(min - count) + " More Startups Needed":"Just " + (min - count) + " More Startup Needed";
+min = event.min;
+count = event.registeredStartups === undefined ? 0 : event.registeredStartups.length;
+
+if (min < count)
+  return count + " Startups Going";
+
+else if (count>2)
+  return (min-count)!=1?(min - count) + " More Startups Needed to Qualify" :"Just " + (min - count) + " More Startup Needed to Qualify";
 });
 
-Handlebars.registerHelper('moreRequired', function(min,count) {
+Handlebars.registerHelper('moreRequired', function(event) {
+  min = event.min;
+  count = event.registeredStartups === undefined ? 0 : event.registeredStartups.length;
   if (count<=2)
-  return (min-count)!=1?(min - count) + " More Startups Needed":"Just " + (min - count) + " More Startup Needed";
+    return (min-count)!=1?(min - count) + " More Startups Needed to Qualify":"Just " + (min - count) + " More Startup Needed to Qualify";
 });
 
 Handlebars.registerHelper("prettifyDate", function(timestamp) {

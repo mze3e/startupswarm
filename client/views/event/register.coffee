@@ -2,7 +2,7 @@ Template.register.events = {
   'click #registerCompany': ->
       count = Events.find({_id: @_id, "registeredStartups": {$elemMatch : {"userId": Meteor.user()._id}}}).count()
       if count is 0
-          Meteor.call('register', @_id, Meteor.user()._id, Meteor.user().profile.contactName, Meteor.user().profile.company);
+          Meteor.call('register', @_id, Meteor.user());
       else
           alert 'You have already registered for the event. Only one registration is allowed for a startup.'
 
@@ -14,5 +14,5 @@ Template.register.events = {
           Meteor.call('cancel', @_id, Meteor.user()._id)
 
   'click #registerNotLoggedIn': ->
-      Router.go('home');
+      Router.go('/sign-up');
 }

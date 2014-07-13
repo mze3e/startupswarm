@@ -33,6 +33,35 @@ Events = new Meteor.Collection("events", {
             type: Number,
             label: "Minimum Startups",
             min: 1
+        },
+        registeredStartups: {
+            type: [Object],
+            label: "Registered Startups",
+            optional: true
+        },
+        "registeredStartups.$.userId": {
+            type: String,
+            label: "User ID",
+            index: true,
+            unique: true
+        },
+        "registeredStartups.$.companyName": {
+            type: String,
+            label: "Company Name"
+        },
+        "registeredStartups.$.contactName": {
+            type: String,
+            label: "Contact Name"
+        },
+        "registeredStartups.$.contactEmail": {
+            type: String,
+            label: "Contact Email",
+            regEx: SimpleSchema.RegEx.Email
+        },
+        "registeredStartups.$.contactPhone": {
+            type: String,
+            label: "Contact Phone",
+            optional: true
         }
     }});
 

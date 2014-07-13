@@ -1,0 +1,6 @@
+<template name="editEvent">
+
+  {{> quickForm collection="Events" doc=editingDoc id="updateEventForm" type="update"}}
+  {{> afDeleteButton collection="Events" doc=editingDoc}}
+  <button id="refresh">Reset</button>
+</template>
