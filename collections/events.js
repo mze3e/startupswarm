@@ -42,7 +42,6 @@ Events = new Meteor.Collection("events", {
         "registeredStartups.$.userId": {
             type: String,
             label: "User ID",
-            index: true,
             unique: true
         },
         "registeredStartups.$.companyName": {
@@ -87,7 +86,7 @@ Events.deny({
   },
   remove: function (userId, doc) {
     // can't remove locked documents
-    return doc.locked;f
+    return doc.locked;
   },
   fetch: ['locked'] // no need to fetch 'owner'
 });
