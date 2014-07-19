@@ -41,8 +41,7 @@ Events = new Meteor.Collection("events", {
         },
         "registeredStartups.$.userId": {
             type: String,
-            label: "User ID",
-            unique: true
+            label: "User ID"
         },
         "registeredStartups.$.companyName": {
             type: String,

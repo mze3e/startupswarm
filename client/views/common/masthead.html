@@ -1,29 +1,43 @@
 <template name="masthead">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand nav-link" href="/">StartupSwarm</a>
+    </div> <!-- /.navbar-header -->
 
-<div class="masthead">
-  <ul class="nav nav-pills pull-right">
-    <li><a href="/">Home</a></li>
-    <li><a href="{{pathFor 'about'}}">How this works?</a></li>
-    <li><a href="{{pathFor 'suggestForm'}}">Suggest an Event</a></li>
-    {{#unless currentUser}}
-    <li><a href="{{pathFor 'entrySignUp'}}">Sign Up</a></li>
-    <li><a href="{{pathFor 'entrySignIn'}}">Sign In</a></li>
-    {{/unless}}
-    {{#if currentUser}}
-    <li><a href="{{pathFor 'profile'}}"> My Profile</a></li>
-    <li><a href="{{pathFor 'entrySignOut'}}">Sign Out</a></li>
-    {{/if}}
-    <li><a href="{{pathFor 'contactForm'}}">Contact</a></li>
-    {{#if currentUserIsAdmin}}
-          <li><a href="/admin">Admin</a></li>
-      <li><a href="{{pathFor 'addEvent'}}">Add Event</a></li>
-    {{/if}}
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="{{pathFor 'about'}}">How this works?</a></li>
+        {{#unless currentUserIsAdmin}}
+        <li><a href="{{pathFor 'suggestForm'}}">Suggest an Event</a></li>
+        {{/unless}}
+        <li><a href="{{pathFor 'contactForm'}}">Contact</a></li>
+        {{#if currentUserIsAdmin}}
+          <li><a href="{{pathFor 'addEvent'}}">Add Event</a></li>
+        {{/if}}
+        {{#unless currentUser}}
+        <li><a href="{{pathFor 'entrySignIn'}}">Sign In</a></li>
+        <li><button class="btn btn-warning btn-sm navbar-btn"><a href="{{pathFor 'entrySignUp'}}">Sign Up</a></button></li>
+        {{/unless}}
+        {{#if currentUser}}
+        <li><a href="{{pathFor 'profile'}}"> My Profile</a></li>
+        <li><a href="{{pathFor 'entrySignOut'}}">Sign Out</a></li>
+        {{/if}}
 
-  </ul>
-
-  <h3 class="muted"><a href="/">StartupSwarm</a></h3>
-</div>
-
-  <hr>
+      </ul>
+    </div> <!-- /.navbar-collapse -->
+  </div> <!-- /.container -->
+</nav> <!-- /.navbar -->
+{{#if home}}
+{{#unless currentUser}}
+  {{>jumbotron}}
+{{/unless}}
+{{/if}}
 
 </template>

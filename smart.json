@@ -10,7 +10,8 @@
     "nprogress": {},
     "animate-css": {},
     "gravatar": {},
-    "autoform": {},
-    "zones": {}
+    "zones": {},
+    "glyphicons-halflings": {},
+    "autoform": {}
   }
 }

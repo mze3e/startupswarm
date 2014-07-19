@@ -7,6 +7,8 @@ Router.map(function() {
   data: function() { return Events.findOne(this.params._id); }
   });
 
+  this.route('')
+
   this.route('registerFullPage', {
   path: '/event/:_id/register',
   data: function() { return Events.findOne(this.params._id); }
@@ -26,7 +28,9 @@ Router.map(function() {
 
 
 Router.configure({
-  layoutTemplate: 'masterLayout'
+  layoutTemplate: 'masterLayout',
+  loadingTemplate: 'Loading',
+  notFoundTemplate: 'NotFound'
 });
 
 
@@ -68,7 +72,10 @@ var IR_AfterHooks = {
     }
 }
 
-Router.onBeforeAction(IR_BeforeHooks.scrollUp);
+// Router.onBeforeAction(IR_BeforeHooks.scrollUp);
+
+Router.onBeforeAction(Houston._user_is_admin(Meteor.user()._id), {only: ['addEvent', 'editEvent']});
+
 //Router.onBeforeAction(IR_BeforeHooks.animateContentOut);
 //Router.onBeforeAction(IR_BeforeHooks.startNProgress);
 
