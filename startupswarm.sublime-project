@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/ahmedmzl/development/startupswarm",
+			"folder_exclude_patterns": [".meteor","packages"]
+		}
+	]
+}

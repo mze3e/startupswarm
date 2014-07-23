@@ -1,0 +1,211 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "collections/events.js",
+			"settings":
+			{
+				"buffer_size": 1637,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 195.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ahmedmzl/development/startupswarm/packages/autoform/autoform.js",
+		"/Users/ahmedmzl/development/startupswarm/client/helpers/errors.js",
+		"/Users/ahmedmzl/development/startupswarm/client/views/common/layout.html",
+		"/Users/ahmedmzl/development/startupswarm/client/views/includes/errors.html",
+		"/Users/ahmedmzl/development/startupswarm/client/views/includes/errors.js",
+		"/Users/ahmedmzl/development/startupswarm/packages/blaze-layout/layout.js",
+		"/Users/ahmedmzl/development/discover-meteor/client/views/posts/post_list.js",
+		"/Users/ahmedmzl/development/discover-meteor/server/fixture.js",
+		"/Users/ahmedmzl/development/discover-meteor/collections/posts.js",
+		"/Users/ahmedmzl/Dropbox/APPSTROM/Internship Project Brief/Opportunity to work at a startup!",
+		"/Users/ahmedmzl/development/tilt-it-v1/tilt-it.html",
+		"/Users/ahmedmzl/development/tilt-it-v1/brands.csv"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"up",
+			"UP",
+			"#16cbe6",
+			"layout",
+			"navigation",
+			"Welcome to my new meteor app",
+			"bootstrap",
+			"home",
+			"brands",
+			"template",
+			"container",
+			"my\"",
+			"my",
+			"tilt-it",
+			"subscribe",
+			"publish"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#4cd964"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "collections/events.js",
+					"settings":
+					{
+						"buffer_size": 1637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1155,
+								1155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 775.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"autoform",
+				"packages/autoform/autoform.js"
+			],
+			[
+				"layout.html",
+				"client/views/common/layout.html"
+			],
+			[
+				"layout",
+				"packages/blaze-layout/layout.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
