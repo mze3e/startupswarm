@@ -3,15 +3,51 @@
 	{
 		"selected_items":
 		[
+			[
+				"eve",
+				"eventId"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "collections/events.js",
+			"file": "client/views/event/register.html",
 			"settings":
 			{
-				"buffer_size": 1637,
+				"buffer_size": 726,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/event/register.coffee",
+			"settings":
+			{
+				"buffer_size": 772,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/registerStartup.js",
+			"settings":
+			{
+				"buffer_size": 641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/event/event.html",
+			"settings":
+			{
+				"buffer_size": 1226,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -40,6 +76,13 @@
 	},
 	"file_history":
 	[
+		"/Users/ahmedmzl/development/startupswarm/collections/events.js",
+		"/Users/ahmedmzl/development/startupswarm/client/views/event/event.js",
+		"/Users/ahmedmzl/development/startupswarm/server/registerStartup.js",
+		"/Users/ahmedmzl/development/startupswarm/client/views/event/register.js",
+		"/Users/ahmedmzl/development/startupswarm/lib/common.js",
+		"/Users/ahmedmzl/development/startupswarm/client/lib/common.js",
+		"/Users/ahmedmzl/development/startupswarm/startupswarm.sublime-project",
 		"/Users/ahmedmzl/development/startupswarm/packages/autoform/autoform.js",
 		"/Users/ahmedmzl/development/startupswarm/client/helpers/errors.js",
 		"/Users/ahmedmzl/development/startupswarm/client/views/common/layout.html",
@@ -104,33 +147,141 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "collections/events.js",
+					"file": "client/views/event/register.html",
 					"settings":
 					{
-						"buffer_size": 1637,
+						"buffer_size": 726,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1155,
-								1155
+								581,
+								581
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 775.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/views/event/register.coffee",
+					"settings":
+					{
+						"buffer_size": 772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								29
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server/registerStartup.js",
+					"settings":
+					{
+						"buffer_size": 641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								641,
+								641
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/views/event/event.html",
+					"settings":
+					{
+						"buffer_size": 1226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								730,
+								730
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -180,6 +331,30 @@
 		"selected_items":
 		[
 			[
+				"events.js",
+				"collections/events.js"
+			],
+			[
+				"event.js",
+				"client/views/event/event.js"
+			],
+			[
+				"event.html",
+				"client/views/event/event.html"
+			],
+			[
+				"register",
+				"client/views/event/register.coffee"
+			],
+			[
+				"event",
+				"client/views/event/register.js"
+			],
+			[
+				"events",
+				"collections/events.js"
+			],
+			[
 				"autoform",
 				"packages/autoform/autoform.js"
 			],
@@ -206,6 +381,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 316.0,
 	"status_bar_visible": true
 }
