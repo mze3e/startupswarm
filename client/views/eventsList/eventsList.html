@@ -5,7 +5,10 @@
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <a href="/event/{{_id}}#top">
-      <img src="{{imageUrl}}" alt="..." height="200px" width="300px"></a>
+      <div class="eventImgContainer">
+        <img src="{{imageUrl}}" alt="...">
+      </div>
+      </a>
       <div class="caption">
         <a href="/event/{{_id}}"><h3>{{name}}</h3></a>
 
@@ -20,7 +23,7 @@
         <a href="/event/{{_id}}" class="btn btn-primary" role="button">Register</a>
         <a href="/event/{{_id}}" class="btn btn-default" role="button">More Info</a>
         {{#if currentUserIsAdmin}}
-        <a href="/event/{{_id}}/edit" class="btn btn-default" role="button">Edit Event</a>
+           <a href="/event/{{_id}}/edit" class="btn btn-default" role="button">Edit Event</a>
         {{/if}}
         </p>
       </div>
