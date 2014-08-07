@@ -1,4 +1,4 @@
-Template.suggestForm.helpers({
+Template.suggestEventForm.helpers({
   suggestFormSchema: function() {
     return Schema.suggest;
   }

@@ -23,12 +23,33 @@ Meteor.methods({
 
     // Send the e-mail
     Email.send({
-        to: "ahmedmzl@gmail.com",
+        to: "yourfriends@introducestartups.com",
         from: doc.email,
-        subject: "Website Contact Form - Message From " + doc.name,
+        subject: "StartupSwarm.com - Website Contact Form - Message From " + doc.name,
+        text: text
+    });
+  },
+
+  suggestEvent: function(doc) {
+    // Important server-side check for security and data integrity
+    check(doc, Schema.contact);
+
+    // Build the e-mail text
+    var text = "Name: " + doc.name + "\n\n"
+            + "Email: " + doc.email + "\n\n\n\n"
+            + doc.message;
+
+    this.unblock();
+
+    // Send the e-mail
+    Email.send({
+        to: "yourfriends@introducestartups.com",
+        from: doc.email,
+        subject: "StartupSwarm.com - New Event Suggestion - Message From " + doc.name,
         text: text
     });
   }
+
 });
 
 

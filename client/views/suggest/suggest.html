@@ -1,5 +1,5 @@
-<template name="suggestForm">
-  {{#autoForm schema=suggestFormSchema id="suggestForm" type="method" meteormethod="sendEmail"}}
+<template name="suggestEventForm">
+  {{#autoForm schema=suggestFormSchema id="suggestEventForm" type="method" meteormethod="suggestEvent" resetOnSuccess="true"}}
   <fieldset>
     <legend>Suggest an Event to be added to StartupSwarm.com</legend>
     {{> afQuickField name="name"}}

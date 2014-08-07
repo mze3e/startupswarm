@@ -1,5 +1,5 @@
 <template name="contactForm">
-  {{#autoForm schema=contactFormSchema id="contactForm" type="method" meteormethod="sendEmail"}}
+  {{#autoForm schema=contactFormSchema id="contactForm" type="method" meteormethod="sendEmail" resetOnSuccess="true"}}
   <fieldset>
     <legend>Contact Us</legend>
     {{> afQuickField name="name"}}
